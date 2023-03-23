@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main  -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Edit Election</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="single-task-form">
+        <h4 class="single-task-form-title"></h4>
+        <div class="form-control">
+          <label class="task-edit-id-title"></label>
+          <p class="task-edit-id"></p>
+        </div>
+        <div id="edit-name" class="form-control">
+          <label class="task-edit-name-title" for="name"></label>
+          <input
+            type="text"
+            name="name"
+            class="task-edit-name"
+            autocomplete="off"
+          />
+        </div>
+        <div  id="edit-date" class="form-control">
+          <label for="completed">Created Date</label>
+          <p class="task-edit-date"></p>
+        </div>
+        <div id="edit-age" class="form-control">
+          <label for="age">Age</label>
+          <input
+            name="age"
+            class="task-edit-age"
+            autocomplete="off"
+            maxlength="2"
+            placeholder=" 18 - 99 "
+          />
+        </div>
+        <div id="edit-genderMale" class="form-control">
+          <label class="task-edit-label">Male</label>
+          <input
+            id="genderMale"
+            type="radio"
+            name="edit-gender"
+            class="task-edit-gender"
+            value="M"
+          />
+        </div>
+        <div id="edit-genderFemale" class="form-control">
+          <label class="task-edit-label">Female</label>
+          <input
+            id="genderFemale"
+            type="radio"
+            name="edit-gender"
+            class="task-edit-gender"
+            value="F"
+          />
+        </div>
+        <div id="edit-party" class="form-control">
+          <label class="task-edit-label">Party</label>
+          <input
+            type="text"
+            name="name"
+            class="task-edit-party"
+            autocomplete="off"
+            placeholder="e.g. Prajakeeya"
+          />
+        </div>
+        <button type="submit" class="block btn task-edit-btn">edit</button>
+        <div class="form-alert"></div>
+      </form>
+      <a href="index.html" id="back-link" class="btn back-link">back to tasks</a>
+    </div>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- js -->
+    <script src="./routerAddScripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+    <title>Election Manager</title>
+  </head>
+  <body>
+    <div id="homie">
+      <a href="index.html" title="Go to Home Page"><span>Elec</span>tion Management</a>
+    </div>
+    <form class="task-form">
+      <h4 class="task-form-title"></h4>
+      <div class="form-control">
+        <div id="task-name" class="flex-div ">
+          <label class="task-input-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            class="task-input"
+            autocomplete="off"
+          />
+        </div>
+        <div id="task-age" class="flex-div ">
+          <label class="task-input-label">Age</label>
+          <input
+            name="age"
+            class="task-input-age"
+            autocomplete="off"
+            maxlength="2"
+            placeholder=" 18 - 99"
+          />
+        </div>
+        <div id="task-gender" class="flex-div ">
+          <label class="task-input-label">Male</label>
+          <input
+            type="radio"
+            name="gender"
+            class="task-input-gender"
+            value="M"
+          />
+          <label class="task-input-label">Female</label>
+          <input
+            type="radio"
+            name="gender"
+            class="task-input-gender"
+            value="F"
+          />
+        </div>
+        <div id="task-party" class="flex-div ">
+          <label class="task-input-label">Party</label>
+          <input
+            type="text"
+            name="party"
+            class="task-input-party"
+            autocomplete="off"
+            placeholder="e.g. Prajakeeya"
+          />
+        </div>
+        <button id='submit-btn' type="submit" class="btn submit-btn">submit</button>
+      </div>
+      <div class="form-alert"></div>
+    </form>
+    <section class="tasks-container">
+      <p class="loading-text">Loading...</p>
+      <div class="tasks"></div>
+      <a href="index.html" id="back-link" class="btn back-link">back to tasks</a>
+    </section>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./routerAddScripts.js"></script>
+  </body>
+</html>
